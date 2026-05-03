@@ -1571,8 +1571,8 @@ function SBadge({s}){const m={"계약완료":["#D1FAE5","#059669"],"검토중":[
 function CopyBtn({msg,label}){const[ok,setOk]=useState(false);const copy=async()=>{await navigator.clipboard.writeText(msg);setOk(true);setTimeout(()=>setOk(false),2000);};return <button onClick={copy} style={{width:"100%",marginTop:8,padding:12,background:ok?"#10B981":"#111",color:"#fff",border:"none",borderRadius:12,fontSize:13,fontWeight:700,cursor:"pointer",fontFamily:"inherit",transition:"background 0.2s"}}>{ok?"✓ 복사됐어요!":(label||"카카오 문구 복사")}</button>;}
 function Empty({text}){return <div style={{textAlign:"center",padding:"40px",color:"#CCC",fontSize:13}}>{text}</div>;}
 const IS={width:"100%",border:"1.5px solid #EEEEE9",borderRadius:12,padding:"12px 14px",fontSize:14,fontFamily:"'Noto Sans KR',sans-serif",outline:"none",background:"#FAFAF7",boxSizing:"border-box",color:"#111",marginBottom:0};
-    </script>
-    <body>
-</html>
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+    root.render(<App />);
+    </script>
+  </body>
+</html>
